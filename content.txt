@@ -1,0 +1,202 @@
+ <!--
+            <h3>Försignaler</h3>
+            <img src ="https://www.jarnvag.net/images/bild/banguide/signaler/fsignalstopp.gif" alt="vänta-stopp">
+
+            <img src ="https://www.jarnvag.net/images/bild/banguide/signaler/fsignalkor.gif" alt="vänta-kör-80">
+
+            <img src ="https://www.jarnvag.net/images/bild/banguide/signaler/fsignalkor40.gif" alt="vänta-kör-40">
+
+            <h3>Huvudsignaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hsignalstopp.gif" alt="stop">
+
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hsignalkor.gif" alt="kör-80">
+
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hsignalkor40.gif" alt="Kör 40, varsamhet
+            (högsta hastighet 40 km/h)">
+
+            <h3>Kombinerade huvud- och försignaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hfsignalstopp.gif" alt="stop">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hfsignalkor40.gif" alt="kör-40">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hfsignalkornastastopp.gif" alt="kör-80-vänta-stopp">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hfsignalkortvag.gif" alt="Kör-40-avkortad tågväg">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hfsignalkornastakor40.gif" alt="Kör 80, vänta kör 40">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hfsignalkornastakor.gif" alt="kör 80, vänta kör 80">
+
+            <h3>Repetersignal</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/repetersignal.gif" alt="repetersignal">
+            <p>Närmaste huvudsignal visar kör 40 eller kör 80
+            Används på station om närmaste huvudsignal inte kan ses från startpunkten för ett stillastående tåg.<br>
+            Not. "Kör 80" betyder att ett fordon utan ATC (läs mer om ATC) får framföras i max 80 km/h.
+            De allra flesta fordon har ATC och får köra i den hastighet som visas på ATC-displayen i förarhytten. Maxhastigheten på svenska järnvägar är 200 km/h.</p>
+
+            <h3>Växlingsdvärgsignaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/dvargstopp.gif" alt="dvärg-stopp">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/dvargkor.gif" alt="dvärg-kör">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/dvarg4.gif" alt="Rörelse tillåten, hinder finns (t ex fordon)">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/dvarg3.gif" alt="Rörelse tillåten, kontrollera växlar">
+
+            <h3>Huvuddvärgsignaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hdvargstopp.gif" alt="hdvärg-stopp">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hdvargstopp2.gif" alt="För tåg: Stopp
+            För växling/
+            arbetsfordon: Rörelse tillåten">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hdvargstopp3.gif" alt="För tåg: Stopp
+            För växling/
+            arbetsfordon: Rörelse tillåten, hinder finns">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hdvargstopp4.gif" alt="För tåg: Stopp
+            För växling/
+            arbetsfordon: Rörelse tillåten, kontrollera växlar">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hdvargkor.gif" alt="hdvargkör">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hdvargkor40.gif" alt="hdvargkör40">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hdvargkornastastopp.gif" alt="Kör, varsamhet - nästa signal kör 40 eller stopp">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/hdvargkor40nastastopp.gif" alt="Kör 40, varsamhet - nästa signal stopp">
+
+            <h3>Spårspärrsignaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/sparsparrstopp.gif" alt="spårspärr-stopp">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/sparsparrkor.gif" alt="spårspärr-kör">
+
+            <h3>Stopplykta / Slutpunktsstopplykta</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/stopplykta.gif" alt="stopplykta">
+
+            <h3>Vägskyddsförsignaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/vagforsignalstopp.gif" alt="vägförsignal-stopp">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/vagforsignalkor.gif" alt="vägförsignal-kör">
+
+            <h3>Vägskyddssignaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/vagsignalstopp.gif" alt="Stopp före plankorsning">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/vagsignalkor.gif" alt="Passera plankorsning">
+
+            <h3>A-signaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/A-signalkor.gif" alt="a-signal-kör">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/A-signalstopp.gif" alt="a-signal-stopp">
+
+            <h3>Brosignaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/brosignalstopp.gif" alt="stopp-före-bro">
+            <img src="https://www.jarnvag.net/images/bild/banguide/signaler/brosignalkor.gif" alt="passera-bro">-->
+
+
+            <h1>Skyltar/tavlor</h1>
+            <h3>Hastighetstavlor</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/hastighetstavla.gif" alt="hastighetstavla">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/hastighetstavlapilner.gif" alt="hastighetstavlapilner">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/hastighetstavlapilupp.gif" alt="hastighetstavlapilupp">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/hastighetstavlaATC.gif" alt="hastighetstavlaATC">
+
+            <h3>Orienteringstavlor</h3>
+            <p>Förvarnar om kommande tavlor, stationer, signaler, vägskydd m m.<br>
+            Består av en triangelformad tavla med en eller flera tilläggstavlor. Här visas bara några exempel.</p>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/orienteringhsignal.gif" alt="orienteringhsignal">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/orienteringtplats.gif" alt="orienteringtplats">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/orienteringhastighet.gif" alt="orienteringhastighet">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/orienteringvagskydd.gif" alt="orienteringvagskydd">
+
+            <h3>Märktavlor</h3>
+            <p>Finns på signaler och används även tillsammans med signalpunktstavlor och orienteringstavlor.
+                Visar trafikplatsens signatur och eventuellt signalens beteckning</p>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/marktavlafyrkantig.gif" alt="marktavlafyrkantig">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/marktavlarund.gif" alt="marktavlarund">
+
+            <h3>Ljudsignaltavlor</h3>
+            <p>Finns före vägkorsningar utan vägskyddsanläggning och tillfälligt vid arbetsplatser i/vid spåret.</p>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/ljudsignaltavla.gif" alt="ljudsignaltavla">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/ljudsignaltavladag.gif" alt="ljudsignaltavladag">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/ljudsignaltavlaV.gif" alt="ljudsignaltavlaV">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/ljudsignaltavlaA.gif" alt="ljudsignaltavlaA">
+
+            <h3>Signalpunktstavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/signalpunktstavla.gif" alt="signalpunktstavla">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/signalpunktstavla2.gif" alt="signalpunktstavla2">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/signalpunktstavla3.gif" alt="signalpunktstavla3">
+
+            <h3>Uppehållstavlor (kallas även U-tavlor)</h3>
+            <p>U-tavlor gäller tåg som har uppehåll för resande. På tavlan finns antingen ett U (gäller då oberoende tåglängd) eller ett tal som anger var ett tåg av en viss längd ska stanna.<br>
+            I det senare fallet finns då vanligtvis flera tavlor med olika längder.</p>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/u-tavla.gif" alt="u-tavla">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/u-tavlavit.gif" alt="u-tavlavit">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/u-tavlabla.gif" alt="u-tavlabla">
+
+            <h3>Stopplatstavla</h3>
+            <p>En stopplatstavla gäller för tåg som ska stanna på en trafikplats men inte har uppehåll som är avsett för resandes av- och påstigning.<br>
+            Visar var ett tåg med en viss längd ska stanna.</p>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/stopplatstavla.gif" alt="stopplatstavla">
+
+            <h3>Påstigningstavla</h3>
+            <p>Anger att persontåg ska stanna för resande, kan finnas på mindre hållplatser.<br>
+            Tavlan sitter på en stolpe och resenären riktar själv tavlan mot det håll tåget kommer ifrån. Smeknamn: plåtstins.</p>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/pastigningstavla.gif" alt="pastigningstavla">
+
+            <h3>ATC-relaterade tavlor</h3>
+            <p>Tavlor med information relaterad till säkerhetssystemet ATC (Automatic Train Control).</p>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/forvarningstavla.gif" alt="forvarningstavla">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/forsignalbaliser.gif" alt="forsignalbaliser">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/repeterbaliser.gif" alt="repeterbaliser">
+
+            <h3>ATC-område</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/atcborjar.gif" alt="atcborjar">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/atcslutar.gif" alt="atcslutar">
+
+            <h3>Systemgränstavlor</h3>
+            <p>Visar gränsen till ett annat trafikeringssystem.</p>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/systemgranstavla_h.gif" alt="systemgranstavla_h">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/systemgranstavla_r.gif" alt="systemgranstavla_r">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/systemgranstavla_e2.gif" alt="systemgranstavla_e2">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/systemgranstavla_e3.gif" alt="systemgranstavla_e3">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/systemgranstavla_m.gif" alt="systemgranstavla_m">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/systemgranstavla_s.gif" alt="systemgranstavla_s">
+            
+            <h3>Tavla "Fortsatt körtillstånd</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/fortsattkortillstand.gif" alt="fortsattkortillstand">
+
+            <h3>Medgivandetavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/medgivandetavla.gif" alt="medgivandetavla">
+
+            <h3>Tavla "Gräns för växling"</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/gransvaxling2.gif" alt="gransvaxling2">
+
+            <h3>Huvudsignaltavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/huvudsignaltavla.gif" alt="huvudsignaltavla">
+
+            <h3>Slutpunktstavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/s-tavla.gif" alt="s-tavla">
+
+            <h3>Dvärgsignalsluttavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/dvargsignalsluttavla.gif" alt="dvargsignalsluttavla">
+
+            <h3>Målpunktstavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/malpunktstavla.gif" alt="malpunktstavla">
+
+            <h3>Ogiltighetstavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/ogiltighetstavla.gif" alt="ogiltighetstavla">
+
+
+            <h3>Nedkopplings-, urkopplings- och inkopplingstavlor</h3>
+            <p>Används vid skyddssektioner i kontaktledningen (skyddssektion = sektion av kontaktledning som kan kopplas ur).</p>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/nedkopplingstavla.gif" alt="nedkopplingstavla">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/nedkopplingstavlalampa.gif" alt="nedkopplingstavlalampa">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/urkopplingstavla.gif" alt="urkopplingstavla">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/inkopplingstavla.gif" alt="inkopplingstavla">
+
+            <h3>Strömbegränsningstavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/strombegransningstavla.gif" alt="strombegransningstavla">
+
+            <h3>Stoppförbudstavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/stoppforbudstavla.gif" alt="stoppforbudstavla">
+
+            <h3>Elspärrsignaler</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/elsparrtavlarod.gif" alt="elsparrtavlarod">
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/elsparrtavlagul.gif" alt="elsparrtavlagul">
+
+            <h3>Kilometertavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/kmtavla.gif" alt="kmtavla">
+
+            <h3>Lutningsvisare</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/lutningsvisare.gif" alt="lutningsvisare">
+
+            <h3>Ploglyfttavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/vagtavla.gif" alt="vagtavla">
+
+            <h3>Hindertavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/hindertavla.gif" alt="hindertavla">
+
+            <h3>Vågsignaltavla</h3>
+            <img src="https://www.jarnvag.net/images/bild/banguide/skyltar/vagsignaltavla.gif" alt="vagsignaltavla">
