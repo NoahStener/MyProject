@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('restart-quiz').addEventListener('click', function() {
         
-        window.location.href = '/'
+        window.location.reload(true);
     });
 
     }
@@ -709,7 +709,7 @@ function showEndOfSignsMessage() {
 
 document.getElementById('back-to-start').addEventListener('click', function() {
     // Antingen återladda sidan för att återställa allt till initialt tillstånd
-    window.location.href = '/'
+    window.location.reload(true);
     // Eller använd window.location.href = '/' för att navigera till startsidan
 });
 
