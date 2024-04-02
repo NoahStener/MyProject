@@ -708,13 +708,11 @@ function showEndOfSignsMessage() {
 }
 
 document.getElementById('back-to-start').addEventListener('click', function() {
+
     // Antingen återladda sidan för att återställa allt till initialt tillstånd
     window.location.reload(true);
-    // Eller använd window.location.href = '/' för att navigera till startsidan
+    
 });
-
-
-
 
 
 
