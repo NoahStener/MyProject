@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
             question: "Huvuddvärgsignaler 5",
             img: "https://www.jarnvag.net/images/bild/banguide/signaler/hdvargkor.gif",
             options: ["Kör 80, vänta kör 80", "Kör 40", "Kör", "Kör 100"],
-            answer: "Kör"
+            answer: "Kör 80"
         },
         { 
             question: "Huvuddvärgsignaler 6",
@@ -148,8 +148,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             question: "Huvuddvärgsignaler 7",
             img: "https://www.jarnvag.net/images/bild/banguide/signaler/hdvargkornastastopp.gif",
-            options: ["Kör 80, vänta kör 80", "Kör", "Kör, varsamhet - nästa signal kör 40 eller stopp", "Kör 40"],
-            answer: "Kör, varsamhet - nästa signal kör 40 eller stopp"
+            options: ["Kör 80, vänta kör 80", "Kör 80 varsamt", "Kör, varsamhet - nästa signal kör 40 eller stopp", "Kör 40"],
+            answer: "Kör 80 varsamt"
         },
         { 
             question: "Huvuddvärgsignaler 8",
@@ -233,34 +233,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ];
 
+
+    function shuffle(array) {
+        console.log('Före shuffle:', JSON.stringify(array.map(item => item.question)));  // Logga frågornas ordning före shuffle
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        console.log('Efter shuffle:', JSON.stringify(array.map(item => item.question)));  // Logga frågornas ordning efter shuffle
+    }
+
+    shuffle(questions);  // Blanda frågorna vid start
+    questions.forEach(question => {
+        if (!question.options.includes(question.answer)) {
+            question.options.push(question.answer);
+        }
+        shuffle(question.options);  // Blanda alternativen för varje fråga
+    });
+
     let currentQuestionIndex = 0;
     let correctAnswers = 0;
     let incorrectAnswers = [];
 
     function showQuestion() {
-    const question = questions[currentQuestionIndex];
-    // Visa frågan
-    document.getElementById('question').innerText = question.question;
-    // Visa bilden för den aktuella frågan
-    const imgElement = document.getElementById('signal-img');
-    if (imgElement) {
+        if (currentQuestionIndex >= questions.length) return;  // Kontrollera så vi inte går utanför arrayens gränser
+        const question = questions[currentQuestionIndex];
+        document.getElementById('question').innerText = question.question;
+        const imgElement = document.getElementById('signal-img');
         imgElement.src = question.img;
-    } else {
-        const newImgElement = document.createElement('img');
-        newImgElement.id = 'signal-img';
-        newImgElement.src = question.img;
-        document.getElementById('quiz-container').insertBefore(newImgElement, document.getElementById('question'));
+
+        const optionsContainer = document.getElementById('options');
+        optionsContainer.innerHTML = '';
+        question.options.forEach(option => {
+            const optionElement = document.createElement('div');
+            optionElement.innerText = option;
+            optionElement.className = 'option';
+            optionElement.addEventListener('click', () => selectOption(option, optionElement));
+            optionsContainer.appendChild(optionElement);
+        });
     }
-    // Visa svarsalternativen
-    const optionsContainer = document.getElementById('options');
-    optionsContainer.innerHTML = '';
-    question.options.forEach(option => {
-        const optionElement = document.createElement('div');
-        optionElement.innerText = option;
-        optionElement.addEventListener('click', () => selectOption(option));
-        optionsContainer.appendChild(optionElement);
-    });
-}
 
     function selectOption(option) {
         const question = questions[currentQuestionIndex];
@@ -269,13 +280,71 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             incorrectAnswers.push(currentQuestionIndex);
         }
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
-            showQuestion();
-        } else {
-            showResults();
-        }
+
+        setTimeout(() => {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                showResults();
+            }
+        }, 200);
     }
+
+    
+
+//     shuffle(questions);
+//     questions.forEach(question => {
+//         if(!question.options.includes(question.answer)) {
+//             question.options.push(question.answer);
+//         }
+//         shuffle(question.options)
+//     });
+
+//     let currentQuestionIndex = 0;
+//     let correctAnswers = 0;
+//     let incorrectAnswers = [];
+
+//     function showQuestion() {
+//     const question = questions[currentQuestionIndex];
+//     // Visa frågan
+//     document.getElementById('question').innerText = question.question;
+//     // Visa bilden för den aktuella frågan
+
+//     const imgElement = document.getElementById('signal-img');
+//     imgElement.src = question.img;
+    
+//     // Visa svarsalternativen
+//     const optionsContainer = document.getElementById('options');
+//     optionsContainer.innerHTML = '';
+//     question.options.forEach(option => {
+//         const optionElement = document.createElement('div');
+//         optionElement.innerText = option;
+//         optionElement.className = 'option';
+//         optionElement.addEventListener('click', () => selectOption(option, optionElement));
+//         optionsContainer.appendChild(optionElement);
+//     });
+// }
+
+//     function selectOption(option, optionElement) {
+//         const question = questions[currentQuestionIndex];
+//         if (option === question.answer) {
+//             correctAnswers++;
+//         } else {
+//             incorrectAnswers.push(currentQuestionIndex);
+//         }
+         
+//         setTimeout(() => {
+//             currentQuestionIndex++;
+//             if (currentQuestionIndex < questions.length) {
+//                 showQuestion();
+//             } else {
+//                 showResults();
+//             }
+
+//         }, 1000)
+    
+//     }
 
     function showResults() {
     let resultsHtml = `<div>Du svarade rätt på ${correctAnswers} av ${questions.length} frågor.</div>`;
@@ -646,7 +715,6 @@ const learningSections = [
         img: "https://www.jarnvag.net/images/bild/banguide/skyltar/vagsignaltavla.gif",
         description: "Betyder sakta, finns vid vagnvågar."
     }
-
 
 
 ];
