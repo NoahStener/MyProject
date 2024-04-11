@@ -293,58 +293,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-//     shuffle(questions);
-//     questions.forEach(question => {
-//         if(!question.options.includes(question.answer)) {
-//             question.options.push(question.answer);
-//         }
-//         shuffle(question.options)
-//     });
-
-//     let currentQuestionIndex = 0;
-//     let correctAnswers = 0;
-//     let incorrectAnswers = [];
-
-//     function showQuestion() {
-//     const question = questions[currentQuestionIndex];
-//     // Visa frågan
-//     document.getElementById('question').innerText = question.question;
-//     // Visa bilden för den aktuella frågan
-
-//     const imgElement = document.getElementById('signal-img');
-//     imgElement.src = question.img;
-    
-//     // Visa svarsalternativen
-//     const optionsContainer = document.getElementById('options');
-//     optionsContainer.innerHTML = '';
-//     question.options.forEach(option => {
-//         const optionElement = document.createElement('div');
-//         optionElement.innerText = option;
-//         optionElement.className = 'option';
-//         optionElement.addEventListener('click', () => selectOption(option, optionElement));
-//         optionsContainer.appendChild(optionElement);
-//     });
-// }
-
-//     function selectOption(option, optionElement) {
-//         const question = questions[currentQuestionIndex];
-//         if (option === question.answer) {
-//             correctAnswers++;
-//         } else {
-//             incorrectAnswers.push(currentQuestionIndex);
-//         }
-         
-//         setTimeout(() => {
-//             currentQuestionIndex++;
-//             if (currentQuestionIndex < questions.length) {
-//                 showQuestion();
-//             } else {
-//                 showResults();
-//             }
-
-//         }, 1000)
-    
-//     }
 
     function showResults() {
     let resultsHtml = `<div>Du svarade rätt på ${correctAnswers} av ${questions.length} frågor.</div>`;
@@ -378,7 +326,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 showQuestion();
-
 
 
 const learningSections = [
